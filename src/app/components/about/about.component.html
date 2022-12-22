@@ -1,0 +1,30 @@
+<div class="about" *ngIf="persona" id="about">
+
+  <div class="perfilcontent">
+    <div class=" profile">
+      <div class="user ">
+        <div class="user-img">
+          <img src={{persona.img}} alt="img-user" class="img-fluid" />
+          <div class="user-name">
+            <b>{{persona.nombre}} {{persona.apellido}} </b>
+          </div>
+          <div class="user-degree">{{persona.titulo}}</div>
+        </div>
+        <button *ngIf="isLogged" routerLink="/editusuario/1" class="btn btn-secondary edituser">Editar Usuario</button>
+  
+      </div>
+       
+      <div class="user-detail ">      
+        <div class="user-info ">
+          <h2>Acerca de mi</h2>
+          <p>
+            {{persona.descripcion}}
+          </p>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+<br>
+</div>

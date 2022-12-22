@@ -1,0 +1,16 @@
+<h1>modal</h1>
+<hr>
+<ng-template #contenido let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Titulo Modal</h4>
+        <span aria-hidden="true">&times;</span>
+    </div>
+    <div class="modal-body">
+        Este es el contendio
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="modal.dismiss()">ok!</button>
+    </div>
+</ng-template>
+
+<button type="button" class="btn btn-outline-danger" (click)="modal.open(contenido)">Lanzar</button>

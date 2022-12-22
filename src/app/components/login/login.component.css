@@ -1,0 +1,121 @@
+section{
+    height: 52vh;
+}
+.formulario{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
+    background: rgba(221, 221, 221, 0.288) !important;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.788);
+    backdrop-filter: blur( 13px );
+    margin-top: 60px;
+    height: 50vh;
+    border-radius: 20px;
+}
+.formu {
+    margin: 60px 20px 15px 0px;
+    width: 80%;
+}
+.inputlogin{
+   padding: 20px;
+   margin: 10px 0px 10px 0px;
+}
+
+input::placeholder{
+    font-size: 20px;
+    color: #000;
+}
+
+img{
+    width: 200px;
+    margin: 0px 0px 35px 0px;
+    float: left;
+}
+.btn{
+    margin-top: 30px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.788);
+    border:0;
+}
+.btn:hover{
+    background-color: rgba(26, 26, 26, 0.438) !important;
+}
+
+@media(max-width:560px) {
+   
+.formulario{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 350px;
+    background: rgba(221, 221, 221, 0.288) !important;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.788);
+    backdrop-filter: blur( 13px );
+    margin-top: 60px;
+    height: 350px;
+    border-radius: 20px;
+    
+    }
+    .formu {
+        margin: 40px 20px 15px 0px;
+        width: 80%;
+    }
+    .inputlogin{
+        padding: 10px;
+        margin: 10px 0px 10px 0px;
+     }
+     input::placeholder{
+        font-size: 20px;
+        color: #000;
+    }
+    
+    img{
+        width: 150px;
+        margin: 0px 0px 35px 0px;
+        float: left;
+    }
+    .btn{
+        margin-top: 20px;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.788);
+        border:0;
+    }
+    
+}
+
+@media(max-width:366px) {
+   
+    .formulario{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        width: 300px;
+        background: rgba(221, 221, 221, 0.288) !important;
+        box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.788);
+        backdrop-filter: blur( 13px );
+        margin-top: 60px;
+        height: 350px;
+        border-radius: 20px;
+        
+        }
+       
+    }
+    @media(max-width:302px) {
+   
+        .formulario{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            width: 250px;
+            background: rgba(221, 221, 221, 0.288) !important;
+            box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.788);
+            backdrop-filter: blur( 13px );
+            margin-top: 60px;
+            height: 350px;
+            border-radius: 20px;            
+            }
+           
+        }

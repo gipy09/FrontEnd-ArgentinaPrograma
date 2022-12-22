@@ -1,0 +1,116 @@
+.skill{
+  padding:0px 50px 0px 50px;
+
+}
+.skill img {
+  margin-left: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  
+}
+.title-tag {
+  margin: 5px;
+  display: flex;
+  align-items: center;    
+  border-radius: 30px;
+  background: rgba( 255, 255, 255, 0.45 ) !important;
+  box-shadow: 0 4px 5px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur( 13px );
+}
+
+.card-header{
+  display: flex;
+  justify-content: space-between;
+}
+.content-pro{
+  width: 100%;
+  margin-bottom: 100px;
+  background: rgba(255, 255, 255, 0.45) !important;
+  box-shadow: 0px 4px 5px 3px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13px);
+  border-radius: 20px;
+
+}
+.skillList{
+  margin-top: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 230px 230px 230px 230px;
+  justify-content: space-evenly;
+
+}
+
+@media(max-width:1191px){
+  .skillList{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+    justify-content: space-evenly;
+  }
+}
+@media(max-width:823px){
+  .skillList{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 230px 230px ;
+    justify-content: space-evenly;
+  }
+}
+@media(max-width:587px){
+  .skillList{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 230px;
+    justify-content: space-evenly;
+  }
+}
+@media(max-width:489px){
+  .skillList{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 230px ;
+    justify-content: center;
+  }
+}
+
+.botones{
+
+  margin: 15px 0px 15px 0px;
+  text-align: center;
+}
+.botones .btn{
+  width: 60px;
+  margin:  5px 0px 5px;
+
+}
+
+.btnadd{
+  width: 180px;
+  height: 44px;
+}
+.btn i{
+  font-size: 20px;
+}
+@media (min-width:521px){
+  button{
+      width: 80px;
+  }
+  .btn i{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+  }
+}
+@media (min-width:337px){
+  button{
+      width: 45px;
+      height: 30px;
+  }
+  .btn i{
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+  }
+}

@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+}
+.btn{
+    margin-top: 35px;
+}
+input{
+    margin: 5px;
+}

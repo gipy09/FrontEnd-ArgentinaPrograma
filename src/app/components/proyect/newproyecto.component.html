@@ -1,0 +1,27 @@
+<div class="container row">
+    <div class="modal-header ">
+        <h2>Agregar Proyecto</h2>
+        <span type="button" class="btn btn-danger" (click)="modal.dismissAll()">&times;</span>
+    </div>
+      <div>
+        <form (ngSubmit)="onCreate()" novalidate #form="ngForm">
+            <div class="form-group">
+                <label for="nombre">Nombre del Proyecto</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required=""> 
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripcion del Proyecto</label>
+                <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required=""> 
+            </div>
+            <div class="form-group">
+                <label for="imagen">Imagen del Proyecto</label>
+                <input type="file" (change)="uploadImgNPro($event)" class="form-control" id="img" name="img" [(ngModel)]="img" required=""> 
+            </div>
+          
+            <button type="" class="btn btn-success">
+                Agregar Proyecto
+            </button>
+        </form>
+      </div>
+
+</div>

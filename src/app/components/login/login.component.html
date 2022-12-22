@@ -1,0 +1,22 @@
+<app-header></app-header>
+<section>
+   <div class="formulario">
+    <form #f="ngForm" (ngSubmit)="onLogin()" novalidate class="formu">
+<img src="../../../assets/logo.png" alt="">
+      <div class="inputlogin">
+        <input type="usuario" placeholder="Usuario" id="nombreUsuario" name="nombreUsuario" class="form-control"
+          [(ngModel)]="nombreUsuario" required />
+      </div>
+
+      <div class="inputlogin">
+        <input type="password" placeholder="Contraseña" id="password" name="password" class="form-control" [(ngModel)]="password"
+          required />
+      </div>
+
+      <button class="btn btn-outline-dark btn-lg px-5" type="submit">Ingresar</button>
+
+    </form>
+
+   </div>
+</section> 
+<app-footer></app-footer>

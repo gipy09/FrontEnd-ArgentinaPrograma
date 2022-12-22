@@ -1,0 +1,47 @@
+<div class="proyect" >
+  <div class="title-tag card-header">
+    <h2>Proyect</h2>
+    <div class="modal fade">
+      <ng-template #contenido let-modal>
+        <app-newproyecto></app-newproyecto>
+      </ng-template>
+    </div>
+    <button
+      class="btn btn-success"
+      type="button"
+      *ngIf="isLogged"
+      (click)="modal.open(contenido)"
+    >
+    <i class="bi bi-plus-square"></i>
+    </button>
+  </div>
+  <div class="proyect-list">
+    <ul>
+      <li *ngFor="let Proyecto of proyecto">
+        <div class="proyect-detail col-sm-4 col-md-4 col-lg-4">
+          <h4>{{Proyecto.nombre}}</h4>
+          <p>
+            {{Proyecto.descripcion}}
+          </p>
+        </div>
+        <div
+          class="proyect-img col-sm-6 col-md-6 col-lg-6 offset-md-0 offset-lg-0"
+        > 
+        <img src="{{Proyecto.img}}"  alt="">
+        
+        </div>
+        <div  *ngIf="isLogged" class="botones col-sm-2 col-md-2 col-lg-2 offset-md-0 offset-lg-0">
+          <button class="btn btn-secondary editar" routerLink="/editpro/{{Proyecto.id}}">
+            <i class="bi bi-pencil"></i>
+
+            </button>  
+            <button class="btn btn-danger eliminar" (click)="delete(Proyecto.id)">
+              <i class="bi bi-trash"></i>
+
+            </button>
+        </div>
+       
+      </li>
+    </ul>
+  </div>
+</div>

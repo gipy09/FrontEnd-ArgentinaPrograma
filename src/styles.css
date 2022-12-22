@@ -1,0 +1,36 @@
+
+
+.btn-primary{
+    background: rgb(0, 162, 255) !important;
+    border-color: rgb(0, 162, 255) !important;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-primary:hover{
+    background: rgb(0, 95, 150) !important;
+    border-color: rgb(0, 95, 150)  !important;
+}
+.btn-secondary{
+    background: rgb(121, 121, 121) !important;
+    border-color: (121, 121, 121)!important;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-secondary:hover{
+    background: rgb(49, 49, 49) !important;
+    border-color: rgb(49, 49, 49)  !important;
+}
+.btn-danger{
+    background: rgb(235, 68, 68) !important;
+    border-color:  rgb(235, 68, 68) !important;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-danger:hover{
+    background: rgb(200, 0, 0) !important;
+    border-color:  rgb(200, 0, 0) !important;
+    
+}
