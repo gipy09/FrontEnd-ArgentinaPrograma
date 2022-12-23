@@ -23,7 +23,7 @@ export class AboutComponent implements OnInit {
   }
 
   cargarUsuario(){
-    this.personaService.detail(4).subscribe(
+    this.personaService.detail(1).subscribe(
       data=>{
         this.persona=data;
       }
